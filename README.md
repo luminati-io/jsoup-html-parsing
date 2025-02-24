@@ -109,7 +109,7 @@ public class App {
 
 On the website we are scraping, the sidebar contains a `div` with an `id` of `promotions_left`:
 
-![Inspect the sidebar](https://brightdata.com/wp-content/uploads/2025/02/Inspect-the-sidebar.png)
+![Inspect the sidebar](https://github.com/luminati-io/jsoup-html-parsing/blob/main/Images/Inspect-the-sidebar.png)
 
 ```java
 //get by Id
@@ -129,7 +129,7 @@ Sidebar: <div id="promotions_left">
 
 `getElementsByTag()` allows to find all elements on the page with a certain tag. On this page, where each book is contained in a unique `article` tag:
 
-![Inspect books](https://brightdata.com/wp-content/uploads/2025/02/Inspect-books.png)
+![Inspect books](https://github.com/luminati-io/jsoup-html-parsing/blob/main/Images/Inspect-books.png)
 
 The code below returns an array of books that will provide the foundation for the rest of the data.
 
@@ -142,7 +142,7 @@ Elements books = doc.getElementsByTag("article");
 
 Let's inspect the price of a book. The class is `price_color`:
 
-![Inspect price](https://brightdata.com/wp-content/uploads/2025/02/Inspect-price.png)
+![Inspect price](https://github.com/luminati-io/jsoup-html-parsing/blob/main/Images/Inspect-price.png)
 
 The below code snippet finds all elements of the `price_color` class and prints the text of the first one using `.first().text()`:
 
@@ -379,8 +379,8 @@ Total pages scraped: 1
 
 Scraping dynamic sites like product listings, news, or research data can be challenging. [Bright Data’s tools](https://brightdata.com/products) help you scale your efforts:
 
-- **Residential Proxies:** Bypass IP bans and geo-restrictions.
-- **Scraping Browser:** Easily handle JavaScript-heavy sites.
-- **Ready-to-Use Datasets:** Get structured data without scraping.
+- **[Residential Proxies](https://brightdata.com/proxy-types/residential-proxies):** Bypass IP bans and geo-restrictions.
+- **[Scraping Browser](https://brightdata.com/products/scraping-browser):** Easily handle JavaScript-heavy sites.
+- **[Ready-to-Use Datasets](https://brightdata.com/products/datasets):** Get structured data without scraping.
 
 Combine these with jsoup for efficient, low-risk data extraction. Try them for free today!
